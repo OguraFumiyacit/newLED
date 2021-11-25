@@ -6,12 +6,10 @@ Raspberry Pi上でデバイスドライバを用いたLED点灯プログラム�
 
 # Feature
 
-# Requirement
-
-# Installation
-
 # Usage
 
+make
+insmod
 # Note
 
 # Auther
