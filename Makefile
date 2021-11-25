@@ -1,3 +1,8 @@
+// SPDX-License Identifier: GPL-3.0
+/*
+ * Copyright (C) 2016 Fumiya Ogura, Ryuichi ueda
+ */
+ 
 obj-m := myled.o
 
 myled.ko: myled.c
