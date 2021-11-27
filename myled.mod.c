@@ -1,6 +1,6 @@
 // SPDX-License Identifier: GPL-3.0
 /*
- * Copyright (C) 20 Fumiya Ogura, Ryuichi ueda
+ * Copyright (C) 20 Fumiya Ogura, Ryuichi ueda. All rights reserved.
  */
 
 #include <linux/build-salt.h>
