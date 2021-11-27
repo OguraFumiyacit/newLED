@@ -1,6 +1,6 @@
 // SPDX-License Identifier: GPL-3.0
 /*
- * Copyright (C) 2016 Fumiya Ogura, Ryuichi ueda
+ * Copyright (C) 2021 Fumiya Ogura, Ryuichi ueda
  */
 
 #include <linux/module.h>
