@@ -1,3 +1,8 @@
+// SPDX-License Identifier: GPL-3.0
+/*
+ * Copyright (C) 20 Fumiya Ogura, Ryuichi ueda
+ */
+
 #include <linux/build-salt.h>
 #include <linux/module.h>
 #include <linux/vermagic.h>
