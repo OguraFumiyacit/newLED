@@ -9,10 +9,15 @@ https://www.youtube.com/watch?v=S-AKO8Tx3Q4
 # Usage
 
 make
+
 insmod myled.ko
+
 chmod 66 /dev/myled0
+
 echo 1> /dev/myled0 //点灯
+
 echo 0> /dev/myled0 //消灯
+
 
 # Auther
 
