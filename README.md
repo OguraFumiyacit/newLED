@@ -30,9 +30,9 @@ cd newLED
 
 make
 
-insmod myled.ko
+sudo insmod myled.ko
 
-chmod 66 /dev/myled0
+sudo chmod 66 /dev/myled0
 ```
 
 ## 【アンインストール】
