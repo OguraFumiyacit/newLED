@@ -1,10 +1,11 @@
 # newLED
 
 Raspberry Pi上でデバイスドライバを用いたLED点灯プログラム。
+2つのLEDの点灯、消灯、3分タイマーの機能を搭載。
 
 # DEMO
 
-https://www.youtube.com/watch?v=S-AKO8Tx3Q4
+
 
 # 動作環境
 
@@ -46,9 +47,11 @@ make clean
 ## 【実行】
 
 ```
-echo 1> /dev/myled0 //点灯
+echo 1> /dev/myled0 //LED1点灯,LED2消灯
 
-echo 0> /dev/myled0 //消灯
+echo 0> /dev/myled0 //LED1消灯,LED2点灯
+
+echo 2> /dev/myled0 //3分タイマースタート
 ```
 
 # Auther
