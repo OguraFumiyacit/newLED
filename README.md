@@ -5,7 +5,7 @@ Raspberry Pi上でデバイスドライバを用いたLED点灯プログラム�
 
 # DEMO
 
-https://youtu.be/c_c_ApkJnPU
+https://www.youtube.com/watch?v=6jIjN8EAVCA
 
 # 動作環境
 
