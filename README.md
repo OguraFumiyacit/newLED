@@ -6,17 +6,21 @@ Raspberry Pi上でデバイスドライバを用いたLED点灯プログラム�
 
 https://www.youtube.com/watch?v=S-AKO8Tx3Q4
 
-# Usage
+# 動作環境
 
-make
+* Raspberry Pi 3 Model B
+* S:ubuntu 20.04 server
 
-insmod myled.ko
+# 導入方法
 
-chmod 66 /dev/myled0
+$ git clone https://github.com/OguraFumiyacit/newLED.git
+$ make
+$ insmod myled.ko
+$ chmod 66 /dev/myled0
 
-echo 1> /dev/myled0 //点灯
 
-echo 0> /dev/myled0 //消灯
+$ echo 1> /dev/myled0 //点灯
+$ echo 0> /dev/myled0 //消灯
 
 
 # Auther
