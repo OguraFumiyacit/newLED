@@ -40,6 +40,7 @@ __used __section(__versions) = {
 	{ 0xdecd0b29, "__stack_chk_fail" },
 	{ 0xd697e69a, "trace_hardirqs_on" },
 	{ 0xc5850110, "printk" },
+	{ 0xeae3dfd6, "__const_udelay" },
 	{ 0x12a4e128, "__arch_copy_from_user" },
 	{ 0xec3d2e1b, "trace_hardirqs_off" },
 	{ 0x3d8560e4, "cpu_hwcaps" },
@@ -51,4 +52,4 @@ __used __section(__versions) = {
 MODULE_INFO(depends, "");
 
 
-MODULE_INFO(srcversion, "E6F8703EC74E146B7967F3E");
+MODULE_INFO(srcversion, "253C8F97B48D4FEBF2D3146");
