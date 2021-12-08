@@ -1,3 +1,7 @@
+// SPDX-License Identifier: GPL-3.0
+/*
+ * Copyright (C) 2021 Fumiya Ogura, Ryuichi ueda. All rights reserved.
+ */
 
 #include <linux/module.h>
 #include <linux/fs.h>
@@ -33,6 +37,7 @@ static ssize_t led_write(struct file* filp, const char* buf, size_t count, loff_
 			}else if(c == '1'){
 				gpio_base[10] = 1 << 25;
 				gpio_base[7] = 1 << 21;
+<<<<<<< HEAD
 			}else if(c == '2'){
 				for(k=1; k<=90; k++){
 					gpio_base[7] = 1 << 25;
@@ -44,6 +49,9 @@ static ssize_t led_write(struct file* filp, const char* buf, size_t count, loff_
 				}
 				gpio_base[10] = 1 << 25;
 				gpio_base[10] = 1 << 21;
+=======
+				gpio_base[7] = 1 << 25;	
+>>>>>>> e13a3bee010c7d558af064cbde4b8805b36e7198
 			}
 		
 			
@@ -83,37 +91,32 @@ static int __init init_mod(void)
 						cdev_init(&cdv, &led_fops);
 							retval = cdev_add(&cdv, dev, 1);
 								if(retval < 0){
-											printk(KERN_ERR "cdev_add failed. major:%d, minor:%d",MAJOR(dev),MINOR(dev));
-													return retval;
-														}
-
+									printk(KERN_ERR "cdev_add failed. major:%d, minor:%d",MAJOR(dev),MINOR(dev));
+									return retval;
+								}
 									cls = class_create(THIS_MODULE,"myled");
 										if(IS_ERR(cls)){
-													printk(KERN_ERR "class_create failed.");
-															return PTR_ERR(cls);
-																}
-											device_create(cls, NULL, dev, NULL, "myled%d",MINOR(dev));
+												printk(KERN_ERR "class_create failed.");
+												return PTR_ERR(cls);
+										}
+										device_create(cls, NULL, dev, NULL, "myled%d",MINOR(dev));
 
-											gpio_base = ioremap_nocache(0x3f200000, 0xA0);
-                                                                                        const u32 led = 25;
-											const u32 led1 = 21;
-											const u32 index = led/10;
-											const u32 index1 = led1/10;
-											const u32 shift = (led%10)*3;
-											const u32 shift1 = (led1%10)*3;
-											const u32 mask = ~(0x7 << shift);
-											const u32 mask1 = ~(0x7 << shift1);
-										        gpio_base[index] = (gpio_base[index] & mask) | (0x1 << shift);	
-											gpio_base[index1] = (gpio_base[index1] & mask1) | (0x1 << shift1);
+										gpio_base = ioremap_nocache(0x3f200000, 0xA0);
+                                                                                const u32 led = 25;
+										const u32 led1 = 21;
+										const u32 index = led/10;
+										const u32 index1 = led1/10;
+										const u32 shift = (led%10)*3;
+										const u32 shift1 = (led1%10)*3;
+										const u32 mask = ~(0x7 << shift);
+										const u32 mask1 = ~(0x7 << shift1);
+										gpio_base[index] = (gpio_base[index] & mask) | (0x1 << shift);	
+										gpio_base[index1] = (gpio_base[index1] & mask1) | (0x1 << shift1);
 											
-	
-									
-											
-											return 0;
+return 0;
 }
 
-static void __exit cleanup_mod(void)
-{
+static void __exit cleanup_mod(void){
 		cdev_del(&cdv);
 			device_destroy(cls, dev);
 				class_destroy(cls);
