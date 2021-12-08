@@ -9,17 +9,32 @@ https://www.youtube.com/watch?v=S-AKO8Tx3Q4
 # 動作環境
 
 * Raspberry Pi 3 Model B
-* S:ubuntu 20.04 server
+* OS:ubuntu 20.04 server
 
-# 導入方法
+# 使用方法
+
+【インストール】
 
 $ git clone https://github.com/OguraFumiyacit/newLED.git
+
+$ cd newLED
+
 $ make
+
 $ insmod myled.ko
+
 $ chmod 66 /dev/myled0
 
+【アンインストール】
+
+$ sudo rmmod myled
+
+$ make clean
+
+【実行】
 
 $ echo 1> /dev/myled0 //点灯
+
 $ echo 0> /dev/myled0 //消灯
 
 
