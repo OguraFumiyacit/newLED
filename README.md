@@ -47,9 +47,9 @@ make clean
 ## 【実行】
 
 ```
-echo 1> /dev/myled0 //LED1点灯,LED2消灯
+echo 0> /dev/myled0 //LED1点灯,LED2消灯
 
-echo 0> /dev/myled0 //LED1消灯,LED2点灯
+echo 1> /dev/myled0 //LED1消灯,LED2点灯
 
 echo 2> /dev/myled0 //3分タイマースタート
 ```
