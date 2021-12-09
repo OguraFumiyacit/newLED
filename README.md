@@ -33,7 +33,7 @@ make
 
 sudo insmod myled.ko
 
-sudo chmod 66 /dev/myled0
+sudo chmod 666 /dev/myled0
 ```
 
 ## 【アンインストール】
