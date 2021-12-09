@@ -16,7 +16,7 @@ https://www.youtube.com/watch?v=6jIjN8EAVCA
 
 * 回路図
 
-![a](https://user-images.githubusercontent.com/91648413/145332225-33df4bf4-238c-476a-8a17-e0e37906b8bc.jpg)
+![a (2)](https://user-images.githubusercontent.com/91648413/145332935-29bc9434-de02-4b5a-927e-9b495e94423c.jpg)
 
 * 配線図
 
