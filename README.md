@@ -14,7 +14,12 @@ https://www.youtube.com/watch?v=6jIjN8EAVCA
 
 # 回路
 
+* 回路図
+
+![a](https://user-images.githubusercontent.com/91648413/145332225-33df4bf4-238c-476a-8a17-e0e37906b8bc.jpg)
+
 * 配線図
+
 ![IMG_20211208_095120](https://user-images.githubusercontent.com/91648413/145129131-581be0ff-3eb5-435c-973e-43c81e0543c0.jpg)
 
 * LED1 (橙): 22（GPIO25）
