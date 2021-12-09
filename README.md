@@ -59,9 +59,9 @@ echo 1 > /dev/myled0 //LED1消灯,LED2点灯
 echo 2 > /dev/myled0 //3分タイマースタート
 ```
 
-# Auther
+# Author
 
-* 作成者 Fumiya Ogura
+* 作成者 Fumiya Ogura, Ryuichi ueda
 * 所属 千葉工業大学先進工学部未来ロボティクス学科
 * E-mail s20c1029ua@s.chibakoudai.jp
 
