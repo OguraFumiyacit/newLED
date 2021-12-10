@@ -12,7 +12,7 @@
 #include <linux/unistd.h>
 #include <linux/delay.h>
 
-MODULE_AUTHOR("Fumiya Ogura");
+MODULE_AUTHOR("Fumiya Ogura, Ryuichi ueda");
 MODULE_DESCRIPTION("driver for LED control");
 MODULE_LICENSE("GPL");
 MODULE_VERSION("0.0.1");
